@@ -1,5 +1,3 @@
-import React from "react";
-
 const Menu = (props) => {
   const { items } = props;
   return (

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Menu from "./Menu";
 import Categories from "./Categories";
 import items from "./data";
 
-function App() {
-  const allCategories = [
+const App = () => {
+  const newCategories = [
     "All",
     ...new Set(
       items.map((item) => {
@@ -12,11 +12,10 @@ function App() {
       })
     ),
   ];
-
   const [menuItems, setMenuItems] = useState(items);
-  const [categories, setCategories] = useState(allCategories);
+  const [categories, setCategories] = useState(newCategories);
 
-  function filterItemsByCategory(category) {
+  const filterItemsByCategory = (category) => {
     if (category === "All") {
       setMenuItems(items);
     } else {
@@ -26,7 +25,7 @@ function App() {
         })
       );
     }
-  }
+  };
 
   return (
     <main>
@@ -43,6 +42,6 @@ function App() {
       </section>
     </main>
   );
-}
+};
 
 export default App;

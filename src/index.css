@@ -144,17 +144,17 @@ p {
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
+  gap: 0.7rem;
 }
 
 .category-btn {
-  background: transparent;
-  border-color: transparent;
+  background-color: transparent;
+  border: 1px solid var(--clr-gold);
+  color: var(--clr-gold);
   font-size: 1rem;
   text-transform: capitalize;
-  margin: 0 0.25rem;
   letter-spacing: 1px;
   padding: 0.375rem 0.5rem;
-  color: var(--clr-gold);
   cursor: pointer;
   transition: var(--transition);
   border-radius: var(--radius);

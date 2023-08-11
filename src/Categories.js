@@ -1,7 +1,6 @@
-import React from "react";
-
 const Categories = (props) => {
   const { categories, filterItemsByCategory } = props;
+
   return (
     <div className="btn-container">
       {categories.map((category, index) => {
