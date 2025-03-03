@@ -160,7 +160,8 @@ p {
   border-radius: var(--radius);
 }
 
-.category-btn:hover {
+.category-btn:hover,
+.category-btn:focus {
   background: var(--clr-gold);
   color: var(--clr-white);
 }
